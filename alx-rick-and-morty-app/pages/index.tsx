@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client"
 import { GET_EPISODES } from "../graphql/queries";
-import { EpisodeProps } from "@/interfaces"      // E anche questo!
+import { EpisodeProps } from "../interfaces"      // E anche questo!
 import EpisodeCard from "@/components/common/EpisodeCard"
 import { useEffect, useState } from "react"
 

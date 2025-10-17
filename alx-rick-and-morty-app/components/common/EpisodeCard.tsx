@@ -1,4 +1,4 @@
-import { EpisodeCardProps } from "@/interfaces"; // Ora questo percorso funziona!
+import { EpisodeCardProps } from "../../../interfaces"; // Ora questo percorso funziona!
 
 const EpisodeCard = ({ id, name, air_date, episode }: EpisodeCardProps) => {
   return (
