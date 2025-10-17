@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ApolloWrapper } from "@/graphql/apolloProvider"; // <-- IMPORTA IL WRAPPER
+import { ApolloWrapper } from "../../graphql/apolloProvider"; // <-- IMPORTA IL WRAPPER
 
 const inter = Inter({ subsets: ["latin"] });
 
