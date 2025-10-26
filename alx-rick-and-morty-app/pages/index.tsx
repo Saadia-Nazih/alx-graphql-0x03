@@ -3,9 +3,19 @@ import { GET_EPISODES } from "../graphql/queries";
 import { EpisodeProps } from "../interfaces"      // E anche questo!
 import EpisodeCard from "../components/common/EpisodeCard"
 import { useEffect, useState } from "react"
+import ErrorBoundary from '../components/ErrorBoundary';
+import ErrorProneComponent from '../components/ErrorProneComponent';
+
+
+  
 
 const Home: React.FC = () => {
 
+  return (
+    <ErrorBoundary>
+      <ErrorProneComponent />
+    </ErrorBoundary>
+  );
   const [page, setPage] = useState<number>(1)
   // Qui usiamo il "gancio" (hook) di Apollo per eseguire la nostra query
   const { loading, error, data, refetch } = useQuery(GET_EPISODES, {
@@ -67,3 +77,7 @@ const Home: React.FC = () => {
 }
 
 export default Home
+
+
+
+
