@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import ErrorBoundary from '../components/common/ErrorBoundary'; // <-- 1. Importa
+import ErrorBoundary from '../components/ErrorBoundary'; // <-- 1. Importa
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
